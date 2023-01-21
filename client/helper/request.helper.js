@@ -6,7 +6,7 @@ export const UseGraphql = async (schema) => {
   };
 
   const axiosRequest = await axios({
-    url: "https://todo-server-ecru.vercel.app/",
+    url: "https://todonext-server.vercel.app/",
     method: "POST",
     data: JSON.stringify(graphqlShcema),
     headers: {
