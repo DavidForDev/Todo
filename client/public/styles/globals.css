@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./reset.css";
+@font-face {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  src: url("../fonts/static/Inter-Thin.ttf");
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  src: url("../fonts/static/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  src: url("../fonts/static/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  src: url("../fonts/static/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  src: url("../fonts/static/Inter-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  src: url("../fonts/static/Inter-Medium.ttf");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  background-color: #181820;
+  font-family: "Bakbak One", cursive;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  height: 100%;
+}
