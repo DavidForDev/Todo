@@ -52,7 +52,7 @@ const ToolsWrapper = ({ children }) => {
 
     const intoData = data.createCollection;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -75,7 +75,7 @@ const ToolsWrapper = ({ children }) => {
 
     const intoData = data.createTasks;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -100,7 +100,7 @@ const ToolsWrapper = ({ children }) => {
 
     const intoData = data.createTaskItem;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -122,7 +122,7 @@ const ToolsWrapper = ({ children }) => {
     const { data, errors } = await UseGraphql(graphqlSchema);
     const intoData = data.markAsDone;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -145,7 +145,7 @@ const ToolsWrapper = ({ children }) => {
     const { data, errors } = await UseGraphql(graphqlShcema);
     const intoData = data.editCollection;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -167,7 +167,7 @@ const ToolsWrapper = ({ children }) => {
     const { data, errors } = await UseGraphql(graphqlShcema);
     const intoData = data.editTask;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -191,7 +191,7 @@ const ToolsWrapper = ({ children }) => {
     const { data, errors } = await UseGraphql(graphqlShcema);
     const intoData = data.editTaskItem;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -215,7 +215,7 @@ const ToolsWrapper = ({ children }) => {
 
     const intoData = data.removeCollection;
 
-    if (intoData ? intoData.alert : "")
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -235,9 +235,10 @@ const ToolsWrapper = ({ children }) => {
         `;
 
     const { data, errors } = await UseGraphql(graphqlShcema);
+
     const intoData = data.removeTask;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -259,7 +260,7 @@ const ToolsWrapper = ({ children }) => {
     const { data, errors } = await UseGraphql(graphqlShcema);
     const intoData = data.removeTaskItem;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,

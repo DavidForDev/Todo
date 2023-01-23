@@ -95,7 +95,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.loginUser;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -123,7 +123,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.createUser;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -153,7 +153,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.forgotPassword;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -177,7 +177,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.recoveryPassword;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -201,7 +201,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.changePassword;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -226,7 +226,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.changeUserName;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
@@ -251,7 +251,7 @@ const AccountServerWrapper = ({ children }) => {
 
     const intoData = data.changeUserEmail;
 
-    if (intoData.alert)
+    if (intoData ? intoData.alert : false)
       return setMessage({
         type: intoData.alert.type,
         message: intoData.alert.message,
