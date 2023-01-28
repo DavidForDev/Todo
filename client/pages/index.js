@@ -10,10 +10,11 @@ import { PrimaryButton, SecondaryButton } from "../UIElements/ui.elements";
 
 // ========== Helper ========== \\
 import { UseGraphql } from "../helper/request.helper";
-import { dayPeriod } from "../helper/date.helper";
 
 const Dashboard = ({ data }) => {
   const { username } = data.exactlyUser;
+  const hour = new Date().getHours();
+  const dayPeriod = hour < 12 ? "Morning" : hour < 18 ? "Afternoon" : "Evening";
 
   return (
     <BodyLayout pageTitle="Dashboard">
