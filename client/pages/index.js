@@ -10,6 +10,7 @@ import { PrimaryButton, SecondaryButton } from "../UIElements/ui.elements";
 
 // ========== Helper ========== \\
 import { UseGraphql } from "../helper/request.helper";
+import { dayPeriod } from "../helper/date.helper";
 
 const Dashboard = ({ data }) => {
   const { username } = data.exactlyUser;
@@ -18,7 +19,7 @@ const Dashboard = ({ data }) => {
     <BodyLayout pageTitle="Dashboard">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-1">
-          <h1 className="text-4xl text-white font-normal">Good morning,</h1>
+          <h1 className="text-4xl text-white font-normal">Good {dayPeriod},</h1>
           <h1 className="text-4xl text-white font-normal">{username}</h1>
         </div>
         <div className="flex w-full gap-3 lg:flex-row flex-col">
