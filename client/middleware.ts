@@ -6,7 +6,7 @@ export default async function middleware(req: NextRequest) {
 
   const token = cookies.get("token");
   const url = req.url;
-  const hostName = "http://localhost:3000";
+  const hostName = "https://todo-forproject.vercel.app";
 
   if (
     url === `${hostName}/` ||
