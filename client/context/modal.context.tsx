@@ -43,25 +43,25 @@ const ModalContextWrapper = ({ children }: { children: ReactNode }) => {
       {
         id: "taskcreator",
         name: "task creator",
-        content: <TaskCreatorForm />,
+        content: <TaskCreatorForm modalId="" />,
         visibleStatus: false,
       },
       {
         id: "taskitemcreator",
         name: "task item creator",
-        content: <TaskItemCreatorForm />,
+        content: <TaskItemCreatorForm modalId="" />,
         visibleStatus: false,
       },
       {
         id: "taskitemeditor",
         name: "task item editor",
-        content: <TaskItemEditorForm />,
+        content: <TaskItemEditorForm modalId="" />,
         visibleStatus: false,
       },
       {
         id: "taskeditor",
         name: "task editor",
-        content: <TaskEditorForm />,
+        content: <TaskEditorForm modalId="" />,
         visibleStatus: false,
       },
       {
@@ -86,13 +86,13 @@ const ModalContextWrapper = ({ children }: { children: ReactNode }) => {
       {
         id: "removetask",
         name: "warning",
-        content: <RemoveTaskForm />,
+        content: <RemoveTaskForm modalId="" />,
         visibleStatus: false,
       },
       {
         id: "removetaskItem",
         name: "warning",
-        content: <RemoveTaskItemForm />,
+        content: <RemoveTaskItemForm modalId="" />,
         visibleStatus: false,
       },
       {
@@ -104,7 +104,7 @@ const ModalContextWrapper = ({ children }: { children: ReactNode }) => {
       {
         id: "removeaccount",
         name: "warning",
-        content: <RemoveAccountForm />,
+        content: <RemoveAccountForm modalId="" />,
         visibleStatus: false,
       },
     ];

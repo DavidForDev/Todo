@@ -24,7 +24,7 @@ export interface ModalTypes {
 export interface ModalWrapperTypes {
   children?: ReactNode;
   admitFunction?: () => void;
-  modalId?: string;
+  modalId: string;
 }
 
 export interface NavCardTypes {

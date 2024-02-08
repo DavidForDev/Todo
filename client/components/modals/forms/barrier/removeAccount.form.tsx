@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../../redux/store";
 import { removeAccount } from "../../../../redux/slices/account/thunks/user.thunks";
 
-const RemoveAccountForm = ({ modalId }: { modalId?: string }) => {
+const RemoveAccountForm = ({ modalId }: { modalId: string }) => {
   // ========= Redux
   const dispatch = useDispatch<AppDispatch>();
   const selector = useSelector((select: RootState) => select.account);

@@ -15,7 +15,7 @@ import { editTaskItem } from "../../../../redux/slices/tasks/thunks/task.thunk";
 // ========== Context ========== \\
 import { ErrorContext } from "../../../../context/errors.context";
 
-const TaskItemEditorForm = ({ modalId }: { modalId?: string }) => {
+const TaskItemEditorForm = ({ modalId }: { modalId: string }) => {
   const [taskItemDetail, setTaskItemDetail] = useState<Object>({});
 
   const [newName, setNewName] = useState<String>("");

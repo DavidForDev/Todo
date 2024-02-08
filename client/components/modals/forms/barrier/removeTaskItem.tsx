@@ -9,7 +9,7 @@ import { AppDispatch } from "../../../../redux/store";
 import { useDispatch } from "react-redux";
 import { removeTaskItem } from "../../../../redux/slices/tasks/thunks/task.thunk";
 
-const RemoveTaskItemForm = ({ modalId }: { modalId?: string }) => {
+const RemoveTaskItemForm = ({ modalId }: { modalId: string }) => {
   // ======== Query
   const router = useRouter();
   const { taskItemId, taskId }: any = router.query;

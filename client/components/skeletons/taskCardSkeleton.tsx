@@ -3,9 +3,12 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 const TaskCardSkeleton = ({ quantity }: any) => {
   return Array(quantity)
     .fill("")
-    .map(() => {
+    .map((_, index) => {
       return (
-        <div className="group animate-pulse w-full p-2 pb-6 shadow-sm bg-white/70 cursor-pointer flex flex-col gap-3 rounded-lg backdrop-blur-xl">
+        <div
+          key={index}
+          className="group animate-pulse w-full p-2 pb-6 shadow-sm bg-white/70 cursor-pointer flex flex-col gap-3 rounded-lg backdrop-blur-xl"
+        >
           <div className="h-28 w-full">
             <div className="w-full bg-gray-200 h-full object-cover rounded-md group-hover:blur-[1px]" />
           </div>

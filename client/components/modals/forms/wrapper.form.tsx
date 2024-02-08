@@ -55,7 +55,7 @@ const Wrapper = ({ children, admitFunction, modalId }: ModalWrapperTypes) => {
           onClick={throttleFunction}
           className="shadow-sm !bg-gradient-to-r !from-red-500 !to-orange-500"
         >
-          {ActionStatusEngine(selector.actionStatus)}
+          {ActionStatusEngine(selector.actionStatus as string)}
         </PrimaryButton>
       </div>
     ) : (

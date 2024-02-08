@@ -17,7 +17,7 @@ import { createTaskItem } from "../../../../redux/slices/tasks/thunks/task.thunk
 // =========== Context ========== \\
 import { ErrorContext } from "../../../../context/errors.context";
 
-const TaskItemCreatorForm = ({ modalId }: { modalId?: string }) => {
+const TaskItemCreatorForm = ({ modalId }: { modalId: string }) => {
   const [itemName, setItemName] = useState<String>("");
   const [attachLink, setAttachLink] = useState<Array<String>>([]);
   const [description, setDescription] = useState<String>("");

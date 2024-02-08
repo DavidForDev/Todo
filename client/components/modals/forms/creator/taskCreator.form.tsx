@@ -13,7 +13,7 @@ import { createTask } from "../../../../redux/slices/tasks/thunks/task.thunk";
 // =========== Context =========== \\
 import { ErrorContext } from "../../../../context/errors.context";
 
-const TaskCreatorForm = ({ modalId }: { modalId?: string }) => {
+const TaskCreatorForm = ({ modalId }: { modalId: string }) => {
   const [taskName, setTaskName] = useState<string>("");
   const [taskTags, setTaskTags] = useState<Array<Object>>([]);
 
