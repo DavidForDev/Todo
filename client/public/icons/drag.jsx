@@ -1,0 +1,74 @@
+import * as React from "react";
+const DragIcon = (props) => (
+  <svg viewBox="291.4947 102.6728 32 38.281" width={20} height={15} {...props}>
+    <g
+      id="SVGRepo_iconCarrier"
+      transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 291.49468994140625, 108.95381927490234)"
+    >
+      <rect
+        x={10}
+        y={-6.281}
+        width={6.456}
+        height={6.456}
+        rx={3.228}
+        ry={3.228}
+        style={{}}
+      />
+      <rect
+        x={22.912}
+        y={-6.281}
+        width={6.456}
+        height={6.456}
+        rx={3.228}
+        ry={3.228}
+        style={{}}
+      />
+      <rect
+        x={10}
+        y={6.632}
+        width={6.456}
+        height={6.456}
+        rx={3.228}
+        ry={3.228}
+        style={{}}
+      />
+      <rect
+        x={22.912}
+        y={6.632}
+        width={6.456}
+        height={6.456}
+        rx={3.228}
+        ry={3.228}
+        style={{}}
+      />
+      <rect
+        x={10}
+        y={19.544}
+        width={6.456}
+        height={6.456}
+        rx={3.228}
+        ry={3.228}
+        style={{}}
+      />
+      <rect
+        x={22.912}
+        y={19.544}
+        width={6.456}
+        height={6.456}
+        rx={3.228}
+        ry={3.228}
+        style={{}}
+      />
+      <rect
+        id="_Transparent_Rectangle_"
+        className="st0"
+        width={32}
+        height={32}
+        style={{
+          fill: "none",
+        }}
+      />
+    </g>
+  </svg>
+);
+export default DragIcon;
