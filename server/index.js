@@ -23,7 +23,7 @@ const graphqlResolvers = require("./graphql/resolver/index");
 app.use(
   "/",
   graphqlHTTP({
-    graphiql: true,
+    graphiql: false,
     schema: graphqlSchema,
     rootValue: graphqlResolvers,
   })
